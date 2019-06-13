@@ -19,7 +19,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.detect do |win_combo|
-    if board[win_combo[0]] == "X" && board[win_combo[1]] == "X" && board[2]]
+    if board[win_combo[0]] == "X" && board[win_combo[1]] == "X" && board[win_combo[2]]
       return win_combo
     elseif board[win_combo[0]] == "0" && board[win_combo[1]] == "0" && board[0]]
       return win_combo
