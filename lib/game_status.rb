@@ -31,6 +31,7 @@ def won?(board)
       return win_combination
     else
       false
+    end
 #    win_combination do |win_index|
 #     if board[win_index[0]] == "X" && board[win_index[1]] == "X" && board[win_index[2]] == "X"
 #       return win_combination
