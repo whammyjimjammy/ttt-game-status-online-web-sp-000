@@ -37,10 +37,14 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? do |i|
-    i == "X" || i == "0"
-  end
+  board.all?{|token| token == "X" || token == "O"}
 end
+
+# def full?(board)
+#   board.all? do |i|
+#     i == "X" || i == "0"
+#   end
+# end
 
 def draw?(board)
   if won?(board) && full?(board)
