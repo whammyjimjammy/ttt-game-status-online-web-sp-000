@@ -35,3 +35,17 @@ def won?(board)
   }
   return false
 end
+
+def full?(board)
+  board.all? do |box|
+    box == "X" || box == "0"
+  end
+end
+
+def draw?(board)
+  if won?(board) && full?(board)
+    return true
+  else
+    return false
+  end
+end
