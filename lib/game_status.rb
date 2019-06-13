@@ -18,20 +18,26 @@ WIN_COMBINATIONS = [
 #board = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
 
 def won?(board)
-  WIN_COMBINATIONS.each do |win_combination|
-    win_index_1 = win_combination[0]
-    win_index_2 = win_combination[1]
-    win_index_3 = win_combination[2]
-
-    position_1 = board[win_index_1]
-    position_2 = board[win_index_2]
-    position_3 = board[win_index_3]
-
-    if position_1 == "X" && position_2 == "X" && position_3 == "X"
-      return win_combination
+  WIN_COMBINATIONS.detect do |win_combo|
+    if board[win_combo[0]] == "X" && board[win_combo[1]] == "X" && board[2]]
+      return win_combo
+    elseif board[win_combo[0]] == "0" && board[win_combo[1]] == "0" && board[0]]
+      return win_combo
     end
   end
-end
+    # win_index_1 = win_combination[0]
+    # win_index_2 = win_combination[1]
+    # win_index_3 = win_combination[2]
+    #
+    # position_1 = board[win_index_1]
+    # position_2 = board[win_index_2]
+    # position_3 = board[win_index_3]
+
+  #  if position_1 == "X" && position_2 == "X" && position_3 == "X"
+  #    return win_combination
+#     end
+#   end
+# end
 
 
 
