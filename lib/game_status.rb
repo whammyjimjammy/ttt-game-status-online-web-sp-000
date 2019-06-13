@@ -15,11 +15,11 @@ WIN_COMBINATIONS = [
   [2,4,6]# ETC, an array for each win combination
 ]
 
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
+#board = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
 
-def won(board)
-  WIN_COMBINATIONS.each do |row_array|
-    row_array.each do |array_spaces|
-      if board[array_spaces[0]] == "X" && board[array_spaces[1]] == "X" && board[array_spaces[2]] == "X"
-  "X won in the top row"
-end
+#def won(board)
+#  WIN_COMBINATIONS.each do |row_array|
+#    row_array.each do |array_spaces|
+#      if board[array_spaces[0]] == "X" && board[array_spaces[1]] == "X" && board[array_spaces[2]] == "X"
+#  "X won in the top row"
+#end
