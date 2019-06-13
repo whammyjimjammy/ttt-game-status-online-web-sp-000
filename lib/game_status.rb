@@ -29,10 +29,11 @@ def won?(board)
 
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
       return win_combination
+    end
     else
-  false
+  return false
 end
-end
+
 
 
   #WIN_COMBINATIONS.each do |win_combination|
