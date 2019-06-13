@@ -18,8 +18,11 @@ WIN_COMBINATIONS = [
 #board = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
 
 def won?(board)
-  WIN_COMBINATIONS.each do |row_array|
-    row_array.each do |array_spaces|
-     if board[array_spaces[0]] == "X" && board[array_spaces[1]] == "X" && board[array_spaces[2]] == "X"
-  return row_array
+  WIN_COMBINATIONS.each do |win_combination|
+    win_combination do |win_index|
+     if board[win_index[0]] == "X" && board[win_index[1]] == "X" && board[win_index[2]] == "X"
+       return win_combination
+     else
+       false
+     end
 end
